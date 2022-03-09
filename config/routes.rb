@@ -4,6 +4,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
-  get "/first-route" => "single#products"
+  get "/first-route" => "products#all"
+
+  get "/second-route" => "products#individual"
   
+  get "/third-route" => "products#individual_2"
+
+  get "/fourth-route" => "products#individual_3"
+
 end
