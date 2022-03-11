@@ -11,7 +11,11 @@ class ProductsController < ApplicationController
   end
 
   def create
-    product = Product.new(name: "couch", price: "8000", image_url: "https://i.pinimg.com/originals/04/ab/61/04ab61338cfad5b66fe4280544a13d69.jpg", description: "the nicest couch you have ever sat on")
+    product = Product.new(
+      name: params[:input_name], 
+      price: params[:input_price], 
+      image_url: params[:input_image], 
+      description: params[:input_description])
 
     product.save
 
