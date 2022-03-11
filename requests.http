@@ -15,4 +15,13 @@ content-type: application/json
     "input_description": "you can call whoever you want"
   }
 
-  
+###
+  PATCH http://localhost:3000/products/1
+  content-type: application/json
+
+  {
+    "input_name": "conditioner",
+    "input_price": "30",
+    "input_image": "https://www.biolage.com/-/media/Project/Biolage/Biolagecom/Images/PDP/Primary-Images/Full-Density/884486233943_Biolage_Advanced_Full_Density_Conditioner_400ml_USA.jpg",
+    "input_description": "Hopefully will make your hair soft"
+  }
