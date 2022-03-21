@@ -9,10 +9,12 @@ POST http://localhost:3000/products
 content-type: application/json
 
   {
-    "input_name": "Amazon Echo",
-    "input_price": "250",
+    "input_name": "Remote",
+    "input_price": "14",
     "input_image":"",
-    "input_description": "something that can do everything"
+    "input_description": "you can change all the channels but you cant change your family",
+    "supplier_id": "1",
+    "quantity": "99"
   }
 
 ###
