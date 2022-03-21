@@ -5,3 +5,10 @@ Product.create!([
   {name: "couch", price: "8000.0", image_url: "https://i.pinimg.com/originals/04/ab/61/04ab61338cfad5b66fe4280544a13d69.jpg", description: "the nicest couch you have ever sat on", quantity: 10},
   {name: "Phone", price: "650.0", image_url: "https://www.att.com/idpassets/sales/uf/deals/cell-phone-deals/839650-Animated-Multi-Tile-iPhone12-retina.png", description: "you can call whoever you want", quantity: 200}
 ])
+
+# products = Product.where(supplier_id: nil)
+
+# products.each do |product|
+#   product.supplier_id = rand(1..2)
+#   product.save
+# end
