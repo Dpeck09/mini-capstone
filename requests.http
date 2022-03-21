@@ -9,10 +9,10 @@ POST http://localhost:3000/products
 content-type: application/json
 
   {
-    "input_name": "Phone",
-    "input_price": "650",
-    "input_image": "https://www.att.com/idpassets/sales/uf/deals/cell-phone-deals/839650-Animated-Multi-Tile-iPhone12-retina.png",
-    "input_description": "you can call whoever you want"
+    "input_name": "Amazon Echo",
+    "input_price": "250",
+    "input_image":"",
+    "input_description": "something that can do everything"
   }
 
 ###
