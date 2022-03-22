@@ -31,3 +31,37 @@ content-type: application/json
     "input_image": "https://www.biolage.com/-/media/Project/Biolage/Biolagecom/Images/PDP/Primary-Images/Full-Density/884486233943_Biolage_Advanced_Full_Density_Conditioner_400ml_USA.jpg",
     "input_description": "Hopefully will make your hair soft"
   }
+
+###
+  POST http://localhost:3000/users.json
+  content-type: application/json
+
+  {
+    "name": "Harry",
+    "email": "Maguire@gmail.com",
+    "password": "password",
+    "password_confirmation": "password"
+  }
+
+###
+  POST http://localhost:3000/orders.json
+  content-type: application/json
+
+  {
+    "user_id": "1",
+    "product_id": "7",
+    "quantity": "3",
+    "subtotal": "750",
+    "tax": "67.00",
+    "total": "817.00"
+  }
+
+
+###
+GET http://localhost:3000/orders/3.json
+
+
+###
+GET http://localhost:3000/orders.json
+
+
