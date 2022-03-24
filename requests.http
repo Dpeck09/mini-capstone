@@ -9,16 +9,11 @@ POST http://localhost:3000/products
 content-type: application/json
 
   {
-    "input_name": "fuzzy blanket",
-    "input_price": "45",
-    "images":[
-      "https://i5.walmartimages.com/asr/8d47b5c1-3225-473f-84c1-025821fb2a82_1.4731e6f7ffd3970aafa8b6bbe38aabf2.jpeg",
-      "https://shepherdsdream.com/wp-content/uploads/2021/06/Shasta-Blanket-Stack-RESIZED.jpg",
-      "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1626822298-bedsure-1626822287.jpg"
-    ],
-    "input_description": "stay cozy for as long as you want, even in the summer time you weirdo",
-    "supplier_id": "1",
-    "quantity": "65"
+    "input_name": "monitor", 
+    "input_price": "120",  
+    "input_description": "something that can show you more mistakes on coding",
+    "supplier_id": 3,
+    "quantity": 76
   }
 
 ###
@@ -26,10 +21,11 @@ content-type: application/json
   content-type: application/json
 
   {
-    "input_name": "conditioner",
-    "input_price": "30",
-    "input_image": "https://www.biolage.com/-/media/Project/Biolage/Biolagecom/Images/PDP/Primary-Images/Full-Density/884486233943_Biolage_Advanced_Full_Density_Conditioner_400ml_USA.jpg",
-    "input_description": "Hopefully will make your hair soft"
+    "input_name": "monitor", 
+    "input_price": "120",  
+    "input_description": "something that can show you more mistakes on coding",
+    "supplier_id": 3,
+    "quantity": 76
   }
 
 ###

@@ -1,7 +1,10 @@
 class ProductsController < ApplicationController
+before_action :authenticate_admin, only: [:create, :update, :destroy]
+
+
   def index
-    @products = Product.all
-    render template: "products/index"
+    products = Product.all
+    render json: products.as_json
   end
 
 
@@ -38,10 +41,11 @@ class ProductsController < ApplicationController
     product.image_url = params[:input_image] || recipe.image_url
     product.description = params[:input_description] || product.description
 
-    render json: product.as_json
+    if product.save
+      render json: product.as_json
+    else
+      render json: {errors: product.erros.full_messages}, status: :unprocessable_entity
     
-    product.save
+    end
   end
-
-
 end

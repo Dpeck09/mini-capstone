@@ -1,12 +1,5 @@
 class Order < ApplicationRecord
 
-
-  # def tax
-  #   price * 0.09
-  # end
-
-  # def total
-  #   price + tax
-  # end
+belongs_to :user
 
 end
