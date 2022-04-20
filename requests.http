@@ -6,14 +6,16 @@ GET http://localhost:3000/products/2.json
 ###
 
 POST http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDk4NzMyNzB9.jUHaHuNTp6f8diS6HV1C1itzJFv93toqu_4BGDiPX-A
 content-type: application/json
 
+
   {
-    "input_name": "monitor", 
-    "input_price": "120",  
-    "input_description": "something that can show you more mistakes on coding",
-    "supplier_id": 3,
-    "quantity": 76
+    "input_name": "Coffee Beans!!", 
+    "input_price": "25",  
+    "input_description": "The finest Coffee beans you could find straight from Nicaragua",
+    "supplier_id": 2,
+    "quantity": 70
   }
 
 ###
@@ -54,10 +56,30 @@ content-type: application/json
 
 
 ###
+POST http://localhost:3000/sessions.json
+content-type: application/json
+
+{
+  "email": "Maguire@gmail.com",
+  "password": "password"
+}
+
+
+###
 GET http://localhost:3000/orders/3.json
 
 
 ###
 GET http://localhost:3000/orders.json
 
+###
+POST http://localhost:3000/carted_products/
+content-type: application/json
 
+{
+  "user_id": ,  
+  "product_id": "4", 
+  "quantity": "2", 
+  "status": "carted", 
+  "order_id": "nil"
+}

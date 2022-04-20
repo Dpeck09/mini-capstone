@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-before_action :authenticate_admin, only: [:create, :update, :destroy]
+# before_action :authenticate_admin, only: [:create, :update, :destroy]
 
 
   def index
@@ -23,10 +23,10 @@ before_action :authenticate_admin, only: [:create, :update, :destroy]
     )
 
     if product.save
-        params[:images].each do |image|
-        image = Image.new(url: image, product_id: product.id)
-        image.save
-      end 
+      #   params[:images].each do |image|
+      #   image = Image.new(url: image, product_id: product.id)
+      #   image.save
+      # end 
       render json: product.as_json
     else
       render json: {errors: product.errors.full_messages}, status: :unprocessable_entity

@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+
+  def current_user
+    @current_user = user_id :current_user.id
+  end
+
   def create
       user = User.new(
       name: params[:name],
@@ -12,4 +17,5 @@ class UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
+
 end
